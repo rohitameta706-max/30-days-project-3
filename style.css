@@ -1,0 +1,148 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image:url(https://img.freepik.com/premium-photo/ombre-blue-curve-light-blue-background-stylish-modern-look_641503-17050.jpg) ;
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+
+.logo{
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+
+}
+
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.content h1 span{
+    color: #ff3753;
+    }
+
+
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image:url(https://img.freepik.com/free-photo/blue-background-with-dark-blue-background-that-says-blue_1340-34869.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+
+.logo{
+    width: 120px;
+    padding: 20px 0;
+}
+.logo:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.content p{
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.content h1 span{
+    color: #ff3753;
+}
+
+.content button{
+    margin-top: 20px;
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 12px 25px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.content button:hover{
+    background: white;
+    color: #000;
+}
+
+/* Clock styling */
+.clock{
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background: rgba(255,255,255,0.15);
+    padding: 12px 20px;
+    border-radius: 10px;
+    width: fit-content;
+    backdrop-filter: blur(6px);
+}
+
+.rocket{
+    position: absolute;
+    width: 350px;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    
+    75%{
+        opacity: 1;
+    }
+
+
+      100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
